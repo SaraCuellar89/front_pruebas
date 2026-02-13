@@ -7,7 +7,8 @@ const Formulario_inicio_sesion = () => {
             <input type="email" placeholder="Correo"/>
             <input type="password" placeholder="Contraseña"/>
 
-            <button type="submit">Entrar</button>   
+            <Link to={'/Perfil'}>Entrar</Link>
+            {/* <button type="submit">Entrar</button>    */}
             <button type="button">Entrar con google</button>
             
             <Link to={'/Registro'}>Crear Cuenta</Link>

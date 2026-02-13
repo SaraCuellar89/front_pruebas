@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Avatares from "./Avatares";
+import { Link } from "react-router-dom";
 
-const Formulario_registro = () => {
+const Formulario_editar_perfil = () => {
 
     const [ver, setVer] = useState(false);
 
@@ -33,10 +33,9 @@ const Formulario_registro = () => {
 
             <input type="password" placeholder="Contraseña"/>
 
-            <button type="submit">Registrarse</button>
-            <button type="button">Registrarse con google</button>
+            <button type="submit">Editar</button>
             
-            <Link to={'/'}>Iniciar Sesion</Link>
+            <Link to={'/Perfil'}>Cancelar</Link>
 
             {ver === false ? (
                 null
@@ -50,4 +49,4 @@ const Formulario_registro = () => {
     )
 }
 
-export default Formulario_registro;
+export default Formulario_editar_perfil;
