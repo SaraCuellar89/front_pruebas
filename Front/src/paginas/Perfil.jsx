@@ -1,9 +1,13 @@
 import React from "react";
 import Encabezado_Perfil from "../componentes/Encabezado_Perfil";
+import Formu_publicacion from "../componentes/Formu_publicacion";
 
 const Perfil = () => {
     return(
-        <Encabezado_Perfil/>
+        <div>
+            <Encabezado_Perfil/>
+            <Formu_publicacion/>
+        </div>
     )
 }
 
