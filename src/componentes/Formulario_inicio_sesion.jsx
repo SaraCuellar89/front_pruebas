@@ -53,6 +53,8 @@ const Formulario_inicio_sesion = () => {
 
         const data = await res.json();
 
+        console.log(data.data)
+
         if (res.ok) {
             localStorage.setItem("token", data.data.token);
             Obtener_info_usuario();
